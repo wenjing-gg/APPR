@@ -1,35 +1,33 @@
-<svg width="1200" height="460" viewBox="0 0 1200 460" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="460" rx="28" fill="#0B1220"/>
-  <rect x="24" y="24" width="1152" height="412" rx="22" fill="#111827" stroke="#1F2937"/>
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="500" rx="28" fill="#0B1220"/>
+  <rect x="24" y="24" width="1152" height="452" rx="22" fill="#111827" stroke="#1F2937"/>
   <text x="60" y="84" fill="#F9FAFB" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">APPR Framework Overview</text>
   <text x="60" y="118" fill="#9CA3AF" font-family="Arial, Helvetica, sans-serif" font-size="18">Anatomy-aware pretraining → semantic rectification → progressive pseudo-label co-refinement</text>
 
-  <rect x="58" y="165" width="308" height="195" rx="20" fill="#172554" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="50" y="165" width="332" height="220" rx="20" fill="#172554" stroke="#3B82F6" stroke-width="2"/>
   <text x="82" y="205" fill="#BFDBFE" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Stage I</text>
   <text x="82" y="242" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Anatomy-aware</text>
   <text x="82" y="276" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Pretraining</text>
-  <text x="82" y="318" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="18">Use stable aerated priors from</text>
-  <text x="82" y="344" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="18">unlabeled scans for warm start.</text>
+  <text x="82" y="324" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="17">Warm start from</text>
+  <text x="82" y="350" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="17">anatomy-aware priors.</text>
 
-  <rect x="446" y="165" width="308" height="195" rx="20" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="2"/>
-  <text x="470" y="205" fill="#DDD6FE" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Stage II</text>
-  <text x="470" y="242" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Semantic</text>
-  <text x="470" y="276" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Rectification</text>
-  <text x="470" y="314" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">Enforce bilateral</text>
-  <text x="470" y="336" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">exclusivity and</text>
-  <text x="470" y="358" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">left-right ordering.</text>
+  <rect x="434" y="165" width="332" height="220" rx="20" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="466" y="205" fill="#DDD6FE" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Stage II</text>
+  <text x="466" y="242" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Semantic</text>
+  <text x="466" y="276" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Rectification</text>
+  <text x="466" y="324" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="17">Preserve bilateral</text>
+  <text x="466" y="350" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="17">side consistency.</text>
 
-  <rect x="834" y="165" width="308" height="195" rx="20" fill="#3F1D2E" stroke="#F472B6" stroke-width="2"/>
-  <text x="858" y="205" fill="#FBCFE8" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Stage III</text>
-  <text x="858" y="242" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Pseudo-label</text>
-  <text x="858" y="276" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Co-refinement</text>
-  <text x="858" y="314" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">Jointly refine priors</text>
-  <text x="858" y="336" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">and segmentation</text>
-  <text x="858" y="358" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">predictions.</text>
+  <rect x="818" y="165" width="332" height="220" rx="20" fill="#3F1D2E" stroke="#F472B6" stroke-width="2"/>
+  <text x="850" y="205" fill="#FBCFE8" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Stage III</text>
+  <text x="850" y="242" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Pseudo-label</text>
+  <text x="850" y="276" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Co-refinement</text>
+  <text x="850" y="324" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="17">Co-refine priors</text>
+  <text x="850" y="350" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="17">and predictions.</text>
 
-  <path d="M374 252H430" stroke="#60A5FA" stroke-width="5" stroke-linecap="round"/>
-  <path d="M422 240L442 252L422 264" stroke="#60A5FA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M390 252H418" stroke="#60A5FA" stroke-width="5" stroke-linecap="round"/>
+  <path d="M410 240L430 252L410 264" stroke="#60A5FA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <path d="M762 252H818" stroke="#C084FC" stroke-width="5" stroke-linecap="round"/>
-  <path d="M810 240L830 252L810 264" stroke="#C084FC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M774 252H802" stroke="#C084FC" stroke-width="5" stroke-linecap="round"/>
+  <path d="M794 240L814 252L794 264" stroke="#C084FC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
