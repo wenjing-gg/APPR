@@ -1,0 +1,6 @@
+torch
+monai
+numpy
+scipy
+SimpleITK
+tqdm
