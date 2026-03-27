@@ -15,15 +15,17 @@
   <text x="470" y="205" fill="#DDD6FE" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Stage II</text>
   <text x="470" y="242" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Semantic</text>
   <text x="470" y="276" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Rectification</text>
-  <text x="470" y="314" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="18">Enforce bilateral exclusivity</text>
-  <text x="470" y="338" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="18">and left-right ordering.</text>
+  <text x="470" y="312" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">Enforce bilateral</text>
+  <text x="470" y="334" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">exclusivity and</text>
+  <text x="470" y="356" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">left-right ordering.</text>
 
   <rect x="834" y="165" width="308" height="175" rx="20" fill="#3F1D2E" stroke="#F472B6" stroke-width="2"/>
   <text x="858" y="205" fill="#FBCFE8" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Stage III</text>
   <text x="858" y="242" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Pseudo-label</text>
   <text x="858" y="276" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Co-refinement</text>
-  <text x="858" y="314" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="18">Jointly refine priors and</text>
-  <text x="858" y="338" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="18">segmentation predictions.</text>
+  <text x="858" y="312" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">Jointly refine priors</text>
+  <text x="858" y="334" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">and segmentation</text>
+  <text x="858" y="356" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="16">predictions.</text>
 
   <path d="M374 252H430" stroke="#60A5FA" stroke-width="5" stroke-linecap="round"/>
   <path d="M422 240L442 252L422 264" stroke="#60A5FA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>

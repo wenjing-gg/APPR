@@ -4,11 +4,9 @@
 
 **Anatomy-aware Pretraining and Pseudo-label Rectification for Semi-Supervised Maxillary Sinus Segmentation**
 
-PyTorch / MONAI implementation for low-label bilateral maxillary sinus segmentation.
+Semi-Supervised Maxillary Sinus Segmentation
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![MONAI](https://img.shields.io/badge/MONAI-3D%20Medical%20Imaging-7C3AED?style=flat-square)
 
 <img src="assets/appr-overview.svg" alt="APPR overview" width="100%" />
 
@@ -166,11 +164,6 @@ Key takeaways:
 - **Stage I** provides the strongest warm-start for stable foreground localization.
 - **Full APPR** achieves the best overall accuracy and the smallest bilateral performance gap.
 
-## Notes
-
-- `ywj.tex` is intentionally excluded from version control and kept only as a local manuscript reference.
-- The repository homepage presentation is styled to feel closer to the polished GitHub layout seen in `mileswyn/SAMIHS`.
-
 ## Citation
 
 If you use this repository in your work, please cite the APPR paper:
@@ -183,8 +176,3 @@ If you use this repository in your work, please cite the APPR paper:
   year    = {2025}
 }
 ```
-
-## Acknowledgement
-
-- Built with `PyTorch` and `MONAI` for 3D medical image segmentation research.
-- README presentation is organized in a polished GitHub style inspired by `mileswyn/SAMIHS`.
