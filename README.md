@@ -771,6 +771,7 @@ python eval.py \
     </tr>
   </tbody>
 </table>
+<p align="center"><em>Table 2:</strong> Comprehensive ablation study results for the left and right maxillary sinuses under 20% labeled data.</em></p>
 
 ### Key takeaways:
 - **Stage III** is the main performance driver for structure completeness and boundary refinement.
