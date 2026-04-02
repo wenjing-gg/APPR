@@ -648,7 +648,7 @@ python eval.py \
 </p>
 <p align="center"><em>Figure 4: Heatmap analysis for module effectiveness validation.</em></p>
 
-### Ablation study under 20% labeled data
+<!--### Ablation study under 20% labeled data
 
 | Method | Dice_fg | Left Dice | Right Dice | Mean Dice | Mean IoU | Mean PPV | Mean HD95 ↓ | Mean ASSD ↓ |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -659,13 +659,130 @@ python eval.py \
 | E5 S1+S2 | 0.3376 | 0.4064 | 0.2441 | 0.3253 | 0.2021 | 0.7054 | 21.9025 | 6.2135 |
 | E6 S1+S3 | 0.9034 | 0.9129 | 0.8806 | 0.8968 | 0.8308 | 0.9561 | 3.4096 | 1.5254 |
 | E7 S2+S3 | 0.8974 | 0.9027 | 0.8810 | 0.8919 | 0.8226 | 0.9413 | 3.9960 | 2.4420 |
-| **E8 Full** | **0.9258** | **0.9279** | **0.9230** | **0.9255** | **0.8624** | **0.9727** | **1.7719** | **0.4116** |
+| **E8 Full** | **0.9258** | **0.9279** | **0.9230** | **0.9255** | **0.8624** | **0.9727** | **1.7719** | **0.4116** | -->
+### Comprehensive Ablation Study (20% Labeled Data)
+<p><strong>Table 2:</strong> Comprehensive ablation study results for the left and right maxillary sinuses. Stage I, Stage II, and Stage III denote anatomy-aware pretraining, semantic misalignment rectification, and collaborative pseudo-label rectification, respectively. Since E2 performs foreground-oriented pretraining without explicit left/right multi-class supervision, only Dice<sub>fg</sub> is reported.</p>
 
-Key takeaways:
+<table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse; text-align:center; margin:1em 0;">
+  <thead>
+    <tr style="border-bottom: 2px solid #333;">
+      <th rowspan="2">ID</th>
+      <th colspan="3">Stage</th>
+      <th rowspan="2">Dice<sub>fg</sub></th>
+      <th colspan="4">Left / Right Maxillary Sinus</th>
+    </tr>
+    <tr style="border-bottom: 1px solid #333;">
+      <th>I</th>
+      <th>II</th>
+      <th>III</th>
+      <th>Dice ↑</th>
+      <th>PPV ↑</th>
+      <th>HD95 ↓</th>
+      <th>ASSD ↓</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.2197</td>
+      <td>0.2288±0.0695 / 0.2099±0.0657</td>
+      <td>0.1328±0.0448 / 0.1208±0.0421</td>
+      <td>45.21±8.29 / 44.86±9.04</td>
+      <td>10.49±1.81 / 10.80±2.00</td>
+    </tr>
+    <tr>
+      <td>E2</td>
+      <td>✅</td>
+      <td></td>
+      <td></td>
+      <td>0.6048</td>
+      <td>- / -</td>
+      <td>- / -</td>
+      <td>- / -</td>
+      <td>- / -</td>
+    </tr>
+    <tr>
+      <td>E3</td>
+      <td></td>
+      <td>✅</td>
+      <td></td>
+      <td>0.0782</td>
+      <td>0.0801±0.0279 / 0.0761±0.0291</td>
+      <td>0.0426±0.0157 / 0.0405±0.0163</td>
+      <td>46.47±6.99 / 45.36±6.99</td>
+      <td>11.28±1.45 / 11.26±1.49</td>
+    </tr>
+    <tr>
+      <td>E4</td>
+      <td></td>
+      <td></td>
+      <td>✅</td>
+      <td><em>0.8914</em></td>
+      <td><em>0.8991±0.0287 / 0.8816±0.0458</em></td>
+      <td><em>0.9651±0.0288 / 0.9631±0.0649</em></td>
+      <td><em>2.04±1.02 / 2.30±1.93</em></td>
+      <td><em>0.50±0.24 / 0.52±0.32</em></td>
+    </tr>
+    <tr>
+      <td>E5</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td></td>
+      <td>0.3376</td>
+      <td>0.4064±0.1042 / 0.2441±0.1260</td>
+      <td>0.7358±0.2296 / 0.6751±0.3057</td>
+      <td>22.37±8.23 / 21.43±7.30</td>
+      <td>5.53±2.64 / 6.90±4.08</td>
+    </tr>
+    <tr>
+      <td>E6</td>
+      <td>✅</td>
+      <td></td>
+      <td>✅</td>
+      <td><em>0.9034</em></td>
+      <td><em>0.9129±0.0331 / 0.8806±0.0554</em></td>
+      <td><em>0.9586±0.0225 / 0.9535±0.0895</em></td>
+      <td><em>2.99±1.71 / 3.83±4.85</em></td>
+      <td><em>1.52±0.33 / 1.53±0.63</em></td>
+    </tr>
+    <tr>
+      <td>E7</td>
+      <td></td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>0.8974</td>
+      <td>0.9027±0.0224 / 0.8810±0.0306</td>
+      <td>0.9490±0.0255 / 0.9336±0.0482</td>
+      <td>3.71±1.29 / 4.28±2.42</td>
+      <td>2.40±0.21 / 3.49±0.42</td>
+    </tr>
+    <tr style="font-weight:bold; border-top: 1px solid #333;">
+      <td>E8 (Full)</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>0.9258</td>
+      <td>0.9279±0.0253 / 0.9230±0.0291</td>
+      <td>0.9722±0.0278 / 0.9733±0.0195</td>
+      <td>1.98±2.83 / 1.56±0.59</td>
+      <td>0.41±0.32 / 0.41±0.22</td>
+    </tr>
+  </tbody>
+</table>
 
+### Key takeaways:
 - **Stage III** is the main performance driver for structure completeness and boundary refinement.
 - **Stage I** provides the strongest warm-start for stable foreground localization.
 - **Full APPR** achieves the best overall accuracy and the smallest bilateral performance gap.
+- 
+<!--Key takeaways:
+
+- **Stage III** is the main performance driver for structure completeness and boundary refinement.
+- **Stage I** provides the strongest warm-start for stable foreground localization.
+- **Full APPR** achieves the best overall accuracy and the smallest bilateral performance gap. -->
 
 ## Citation
 
