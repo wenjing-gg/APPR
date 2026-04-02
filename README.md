@@ -161,7 +161,7 @@ python eval.py \
 
 ### Qualitative Visualization Results
 <p align="center">
-  <img src="figures/Visualization.png" alt="Visualization Results" width="900">
+  <img src="figures/visualization.png" alt="Visualization Results" width="900">
 </p>
 <p align="center"><em>Figure 3: Qualitative visualization of maxillary sinus segmentation results.</em></p>
 
