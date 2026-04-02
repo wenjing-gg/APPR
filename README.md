@@ -167,9 +167,8 @@ python eval.py \
 
 ### Ablation Study & Heatmap Analysis
 <p align="center">
-<div style="overflow:hidden; height:420px;">
-<img src="figures/heatmap.png" alt="Ablation Heatmap Results" width="800" style="margin-top:-120px;">
-</div>
+<img src="figures/heatmap.png" alt="Ablation Heatmap Results" width="800">
+</p>
 <p align="center"><em>Figure 4: Heatmap analysis for module effectiveness validation.</em></p>
 
 ### Ablation study under 20% labeled data
