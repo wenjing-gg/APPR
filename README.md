@@ -8,8 +8,11 @@ Semi-Supervised Maxillary Sinus Segmentation
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
 
-<img src="assets/appr-overview.svg" alt="APPR overview" width="100%" />
-
+<!-- <img src="assets/appr-overview.svg" alt="APPR overview" width="100%" /> -->
+<p align="center">
+  <img src="figures/framework.png" alt="APPR Overall Framework" width="900">
+</p>
+<p align="center"><em>Figure 1: The overall three-stage pipeline of the proposed APPR framework.</em></p>
 </div>
 
 ## Overview
@@ -35,6 +38,11 @@ APPR follows a progressive training pipeline:
 3. **Pseudo-label co-refinement** jointly uses prior guidance and segmentation responses to iteratively improve unlabeled supervision.
 
 In practice, the framework is designed to improve three things at once: foreground localization, bilateral semantic consistency, and boundary quality.
+
+<p align="center">
+  <img src="figures/paradigm.png" alt="APPR Module Details" width="850">
+</p>
+<p align="center"><em>Figure 2: Detailed illustration of the core modules in APPR.</em></p>
 
 ## Highlights
 
@@ -144,6 +152,24 @@ python eval.py \
 ```
 
 ## Results
+
+### Quantitative Comparison with SOTA Methods
+<p align="center">
+  <img src="figures/combined.png" alt="SOTA Quantitative Results" width="850">
+</p>
+<p align="center"><em>Table 1: Quantitative comparison between APPR and state-of-the-art methods.</em></p>
+
+### Qualitative Visualization Results
+<p align="center">
+  <img src="figures/Visualization.png" alt="Visualization Results" width="900">
+</p>
+<p align="center"><em>Figure 3: Qualitative visualization of maxillary sinus segmentation results.</em></p>
+
+### Ablation Study & Heatmap Analysis
+<p align="center">
+  <img src="figures/heatmap.png" alt="Ablation Heatmap Results" width="800">
+</p>
+<p align="center"><em>Figure 4: Heatmap analysis for module effectiveness validation.</em></p>
 
 ### Ablation study under 20% labeled data
 
