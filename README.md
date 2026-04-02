@@ -158,8 +158,7 @@ python eval.py \
   <img src="figures/combined.png" alt="SOTA Quantitative Results" width="850">
 </p>
 <p align="center"><em>Table 1: Quantitative comparison between APPR and state-of-the-art methods.</em></p> -->
-<p><strong>Comparison of maxillary sinus segmentation results on NasalSeg and ToothFairy2 under different labeled-data ratios.</strong> Red and orange text denote the best and second-best results among compared methods, respectively, and the gray background marks APPR.</p>
-<p style="text-align:right;"><strong>1st</strong>: <span style="color:red">Red Font</span> &nbsp;&nbsp; <strong>2nd</strong>: <span style="color:orange">Orange Font</span> &nbsp;&nbsp; <strong>Ours</strong>: <span style="background-color:#e0e0e0; padding:2px 8px;">&nbsp;</span></p>
+<p><strong>Comparison of maxillary sinus segmentation results on NasalSeg and ToothFairy2 under different labeled-data ratios.</p>
 
 <table border="1" cellpadding="4" cellspacing="0" style="width:100%; font-size:12px; border-collapse:collapse; text-align:center;">
   <thead>
@@ -777,7 +776,7 @@ python eval.py \
 - **Stage III** is the main performance driver for structure completeness and boundary refinement.
 - **Stage I** provides the strongest warm-start for stable foreground localization.
 - **Full APPR** achieves the best overall accuracy and the smallest bilateral performance gap.
-- 
+
 <!--Key takeaways:
 
 - **Stage III** is the main performance driver for structure completeness and boundary refinement.
