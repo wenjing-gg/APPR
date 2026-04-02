@@ -660,7 +660,7 @@ python eval.py \
 | E7 S2+S3 | 0.8974 | 0.9027 | 0.8810 | 0.8919 | 0.8226 | 0.9413 | 3.9960 | 2.4420 |
 | **E8 Full** | **0.9258** | **0.9279** | **0.9230** | **0.9255** | **0.8624** | **0.9727** | **1.7719** | **0.4116** | -->
 ### Comprehensive Ablation Study (20% Labeled Data)
-<p><strong>Table 2:</strong> Comprehensive ablation study results for the left and right maxillary sinuses. Stage I, Stage II, and Stage III denote anatomy-aware pretraining, semantic misalignment rectification, and collaborative pseudo-label rectification, respectively. Since E2 performs foreground-oriented pretraining without explicit left/right multi-class supervision, only Dice<sub>fg</sub> is reported.</p>
+<p><strong> Comprehensive ablation study results for the left and right maxillary sinuses. Stage I, Stage II, and Stage III denote anatomy-aware pretraining, semantic misalignment rectification, and collaborative pseudo-label rectification, respectively. Since E2 performs foreground-oriented pretraining without explicit left/right multi-class supervision, only Dice<sub>fg</sub> is reported.</p>
 
 <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:14px; border-collapse:collapse; text-align:center; margin:1em 0;">
   <thead>
