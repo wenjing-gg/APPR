@@ -1,6 +1,6 @@
 <div align="center">
 
-# APPR
+# APRNet
 
 **Anatomy-aware Pretraining and Pseudo-label Rectification for Semi-Supervised Maxillary Sinus Segmentation**
 
@@ -10,28 +10,28 @@ Semi-Supervised Maxillary Sinus Segmentation
 
 <!-- <img src="assets/appr-overview.svg" alt="APPR overview" width="100%" /> -->
 <p align="center">
-  <img src="figures/framework.png" alt="APPR Overall Framework" width="900">
+  <img src="figures/framework.png" alt="APRNet Overall Framework" width="900">
 </p>
-<p align="center"><em>Figure 1: The overall three-stage pipeline of the proposed APPR framework.</em></p>
+<p align="center"><em>Figure 1: The overall three-stage pipeline of the proposed APRNet framework.</em></p>
 </div>
 
 ## Overview
 
-APPR is a three-stage semi-supervised framework designed for anatomically constrained bilateral maxillary sinus segmentation.
+APRNet is a three-stage semi-supervised framework designed for anatomically constrained bilateral maxillary sinus segmentation.
 
 - **Stage I – Anatomy-aware pretraining** initializes the segmentation network with robust aerated-region priors extracted from unlabeled scans.
 - **Stage II – Semantic rectification** improves labeled supervision with side-aware constraints that reduce left-right semantic confusion.
 - **Stage III – Pseudo-label co-refinement** progressively fuses anatomical priors and model predictions to obtain cleaner unlabeled supervision.
 
-This repository contains the core training, evaluation, prior modeling, loss design, and 3D backbone implementation used by APPR.
+This repository contains the core training, evaluation, prior modeling, loss design, and 3D backbone implementation used by APRNet.
 
 ## Abstract
 
-Semi-supervised medical image segmentation aims to leverage large volumes of unlabeled data with extremely limited annotation budgets. For anatomically complex bilateral structures, random initialization, foreground semantic misalignment, and noisy pseudo-label accumulation can significantly undermine training stability. APPR addresses this problem with a unified three-stage framework that combines anatomy-aware pretraining, semantic rectification, and progressive pseudo-label co-refinement for maxillary sinus segmentation.
+Semi-supervised medical image segmentation aims to leverage large volumes of unlabeled data with extremely limited annotation budgets. For anatomically complex bilateral structures, random initialization, foreground semantic misalignment, and noisy pseudo-label accumulation can significantly undermine training stability. APRNet addresses this problem with a unified three-stage framework that combines anatomy-aware pretraining, semantic rectification, and progressive pseudo-label co-refinement for maxillary sinus segmentation.
 
 ## Method
 
-APPR follows a progressive training pipeline:
+APRNet follows a progressive training pipeline:
 
 1. **Anatomy-aware pretraining** extracts stable aerated-region priors from unlabeled scans to warm-start the model.
 2. **Semantic rectification** imposes side-aware supervision to reduce left-right confusion and preserve bilateral exclusivity.
@@ -40,9 +40,9 @@ APPR follows a progressive training pipeline:
 In practice, the framework is designed to improve three things at once: foreground localization, bilateral semantic consistency, and boundary quality.
 
 <p align="center">
-  <img src="figures/paradigm.png" alt="APPR Module Details" width="850">
+  <img src="figures/paradigm.png" alt="APRNet Module Details" width="850">
 </p>
-<p align="center"><em>Figure 2: Detailed illustration of the core modules in APPR.</em></p>
+<p align="center"><em>Figure 2: Detailed illustration of the core modules in APRNet.</em></p>
 
 ## Highlights
 
@@ -55,7 +55,7 @@ In practice, the framework is designed to improve three things at once: foregrou
 ## Repository Layout
 
 ```text
-APPR/
+APRNet/
 ├── PriorNet.py      # anatomy-aware prior extraction and pretraining modules
 ├── VISTA3D.py       # 3D segmentation backbone builder
 ├── dataset.py       # data loading, transforms, split helpers, orientation checks
@@ -95,7 +95,7 @@ Key notes:
 
 ## Datasets
 
-APPR is organized around two public craniofacial datasets described in the manuscript:
+APRNet is organized around two public craniofacial datasets described in the manuscript:
 
 - **NasalSeg**: 130 craniofacial 3D CT volumes with bilateral maxillary sinus annotations.
 - **ToothFairy2**: a multicenter CBCT benchmark, from which 45 maxillary-sinus-labeled cases are used in this project.
@@ -157,7 +157,7 @@ python eval.py \
 <!-- <p align="center">
   <img src="figures/combined.png" alt="SOTA Quantitative Results" width="850">
 </p>
-<p align="center"><em>Table 1: Quantitative comparison between APPR and state-of-the-art methods.</em></p> -->
+<p align="center"><em>Table 1: Quantitative comparison between APRNet and state-of-the-art methods.</em></p> -->
 <p><strong>Comparison of maxillary sinus segmentation results on NasalSeg and ToothFairy2 under different labeled-data ratios.</p>
 
 <table border="1" cellpadding="4" cellspacing="0" style="width:100%; font-size:12px; border-collapse:collapse; text-align:center;">
@@ -776,7 +776,7 @@ python eval.py \
 ### Key takeaways:
 - **Stage III** is the main performance driver for structure completeness and boundary refinement.
 - **Stage I** provides the strongest warm-start for stable foreground localization.
-- **Full APPR** achieves the best overall accuracy and the smallest bilateral performance gap.
+- **Full APRNet** achieves the best overall accuracy and the smallest bilateral performance gap.
 
 <!--Key takeaways:
 
@@ -786,11 +786,11 @@ python eval.py \
 
 ## Citation
 
-If you use this repository in your work, please cite the APPR paper:
+If you use this repository in your work, please cite the APRNet paper:
 
 ```bibtex
-@article{appr2025,
-  title   = {APPR: Anatomy-aware Pretraining and Pseudo-label Rectification for Semi-Supervised Maxillary Sinus Segmentation},
+@article{aprnet2025,
+  title   = {APRNet: Anatomy-aware Pretraining and Pseudo-label Rectification for Semi-Supervised Maxillary Sinus Segmentation},
   author  = {Anonymous},
   journal = {Under preparation},
   year    = {2025}
